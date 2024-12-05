@@ -5,7 +5,7 @@ const dataStore = useDataStore();
 
 const handleImageError = () => {
   // В json есть логотипы которых у меня нет.
-  event.target.src = "/src/assets/img/EcoPack.png";
+  event.target.src = "/assets/img/EcoPack.png";
 };
 </script>
 
@@ -15,7 +15,7 @@ const handleImageError = () => {
       <div class="left-side">
         <div class="logo">
           <img
-            :src="'/src/assets/img/' + item.logo + '.png'"
+            :src="'/assets/img/' + item.logo + '.png'"
             alt="Logo"
             @error="handleImageError"
           />
